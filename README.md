@@ -6,4 +6,4 @@ This is a fully responsive Real Estate Site I created with HTML and SASS
 
 ## Screenshot 
 
-![screenshot.PNG]()
+![](./screenshot.PNG)
