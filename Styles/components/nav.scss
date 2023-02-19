@@ -1,0 +1,105 @@
+@import '../base/variables';
+
+.top-section {
+	background-image: url(../../Images/houses/pic4.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+
+	.navbar {
+
+		.nav {
+			flex-direction: row;
+
+			.active {
+				border-bottom: 4px solid #3e7cb1 !important;
+			}
+
+			.nav-item {
+				padding: 15px;
+				border-bottom: 5px solid transparent;
+				margin: 0px 10px;
+				transition: 0.3s;
+
+				&:hover {
+					border-bottom: 4px solid #3e7cb1;
+				}
+
+				a {
+					color: $whitish;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+
+	.hero-section {
+		height: 400px;
+		@include flex (center, center, row, 0px);
+		color: $whitish;
+
+		h1 {
+			margin: 0;
+			font-size: 2.8em;
+			text-align: center;
+		}
+	}
+
+	.wave {
+		position: absolute;
+		bottom: -65px;
+	}
+
+	.news {
+		position: absolute;
+		z-index: 2;
+		bottom: 5%;
+		right: 20px;
+		width: 50%;
+
+		h5 {
+			text-align: right;
+			margin-right: 4em;
+			font-weight: bold;
+			color: white;
+		}
+
+		.news-item {
+			animation: stream 10s infinite linear;
+
+			&:nth-child(2) {
+				animation: stream-reverse 10s infinite linear;
+			}
+		}
+	}
+}
+
+@keyframes stream {
+	0% {
+		transform: translateX(100%)
+	}
+
+	50% {
+		transform: translateX(-20px)
+	}
+
+	100% {
+		transform: translateX(100%)
+	}
+}
+
+@keyframes stream-reverse {
+	0% {
+		transform: translateX(-20px)
+	}
+
+	50% {
+		transform: translateX(100%)
+	}
+
+	100% {
+		transform: translateX(-20px)
+	}
+}

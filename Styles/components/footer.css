@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@400&display=swap");
+/* line 3, footer.scss */
+.footer {
+  padding: 30px;
+  background-color: #00549d;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  color: #e9e9e9; }
+  /* line 10, footer.scss */
+  .footer .logo {
+    margin-left: 10px; }
+  /* line 14, footer.scss */
+  .footer .col2, .footer .copyright {
+    width: 100%; }
+  /* line 18, footer.scss */
+  .footer .newsletter {
+    text-align: end; }
+    /* line 21, footer.scss */
+    .footer .newsletter .inputs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: end;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      gap: 0px; }
+      /* line 24, footer.scss */
+      .footer .newsletter .inputs input {
+        width: 400px;
+        border-radius: 5px 0px 0px 5px;
+        padding: 0.7em;
+        border: 2px solid transparent;
+        border-right: 0; }
+        /* line 31, footer.scss */
+        .footer .newsletter .inputs input:focus {
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          border: 2px solid;
+          border-right: 0; }
+      /* line 38, footer.scss */
+      .footer .newsletter .inputs button {
+        border-radius: 0px 5px 5px 0px;
+        padding: 0.7em; }
+  /* line 45, footer.scss */
+  .footer .policies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+    margin-left: 1em; }
+    /* line 49, footer.scss */
+    .footer .policies a {
+      text-decoration: none;
+      color: #e9e9e9; }
+  /* line 55, footer.scss */
+  .footer .copyright {
+    text-align: center; }
+
+/*# sourceMappingURL=footer.css.map */

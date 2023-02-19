@@ -1,0 +1,58 @@
+@import '../base/variables';
+
+.footer {
+	padding: 30px;
+	background-color: #00549d;
+	margin-top: 30px;
+	@include flex (center, start, column, 20px);
+	color: $whitish;
+	
+	.logo {
+		margin-left: 10px;
+	}
+	
+	.col2, .copyright {
+		width: 100%;
+	}
+	
+	.newsletter {
+		text-align: end;
+		
+		.inputs {
+			@include flex (end, center, row, 0px);
+			
+			input {
+				width: 400px;
+				border-radius: 5px 0px 0px 5px;
+				padding: 0.7em;
+				border: 2px solid transparent;
+				border-right: 0;
+				
+				&:focus {
+					box-shadow: none;
+					border: 2px solid;
+					border-right: 0;
+				}
+			}
+			
+			button {
+				border-radius: 0px 5px 5px 0px;
+				padding: 0.7em;
+			}
+		}
+	}
+	
+	.policies {
+		@include flex (start, center, row, 20px);
+		margin-left: 1em;
+		
+		a {
+			text-decoration: none;
+			color: $whitish;
+		}
+	}
+	
+	.copyright {
+		text-align: center;
+	}
+}

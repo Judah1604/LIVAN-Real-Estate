@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px) {
+	.top-section {
+
+		.navbar .nav {
+			margin-left: auto;
+		}
+
+		.wave {
+			bottom: -5%;
+		}
+
+		.news {
+			bottom: -5%;
+		}
+	}
+
+	.main-container {
+
+		.main {
+			width: 95%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.top-section {
+
+		.news {
+			h5 {
+				margin: 0;
+			}
+		}
+	}
+
+	.main-container {
+		padding-top: 40px;
+
+		.main {
+			.property .details {
+				width: 90%;
+				margin-top: 1em;
+			}
+		}
+	}
+
+	.footer {
+		.policies {
+			margin-top: 1em;
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.top-section {
+
+		.hero-section {
+
+			h1 {
+				font-size: 2em;
+			}
+		}
+
+		.wave {
+			height: 220px;
+		}
+		
+		.news {
+			width: 70%;
+			bottom: -15%;
+		}
+	}
+
+	.main-container {
+
+		.main {
+			.property .image {
+				display: grid;
+				place-items: center;
+				width: 90%;
+				box-shadow: none;
+			}
+		}
+	}
+
+	.footer .newsletter .inputs input {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.main-container .main .property .details h2 {
+		font-size: 2.1em;
+	}
+}

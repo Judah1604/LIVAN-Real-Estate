@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik:wght@400&display=swap");
+/* line 3, main.scss */
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px; }
+  /* line 6, main.scss */
+  .main-container .main {
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 15px;
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(3.9px);
+            backdrop-filter: blur(3.9px);
+    width: 1100px;
+    padding: 20px;
+    color: black; }
+    /* line 15, main.scss */
+    .main-container .main .header {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 3em;
+      font-family: "Poppins", sans-serif;
+      overflow: hidden; }
+    /* line 23, main.scss */
+    .main-container .main .property {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 3em; }
+      /* line 27, main.scss */
+      .main-container .main .property .image {
+        width: 500px;
+        overflow: hidden;
+        border-radius: 15px;
+        padding: 0;
+        -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); }
+        /* line 34, main.scss */
+        .main-container .main .property .image img {
+          width: 100%;
+          height: auto;
+          -o-object-fit: cover;
+             object-fit: cover;
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+          border-radius: 15px; }
+          /* line 41, main.scss */
+          .main-container .main .property .image img:hover {
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1); }
+      /* line 49, main.scss */
+      .main-container .main .property .details h2 {
+        text-align: center;
+        font-size: 2.3em;
+        margin-bottom: 20px; }
+      /* line 55, main.scss */
+      .main-container .main .property .details ul {
+        margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px; }
+        /* line 59, main.scss */
+        .main-container .main .property .details ul li {
+          list-style-position: inside; }
+      /* line 64, main.scss */
+      .main-container .main .property .details .price {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        gap: 0px;
+        margin-top: 10px; }
+        /* line 68, main.scss */
+        .main-container .main .property .details .price h2 {
+          margin: 0; }
+        /* line 72, main.scss */
+        .main-container .main .property .details .price button {
+          padding: 10px 15px; }
+      /* line 78, main.scss */
+      .main-container .main .property:nth-child(even) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse; }
+
+/*# sourceMappingURL=main.css.map */

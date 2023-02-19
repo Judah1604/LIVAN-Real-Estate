@@ -1,0 +1,83 @@
+@import '../base/variables';
+
+.main-container {
+	@include flex (center, center, column, 0px);
+
+	.main {
+		background: rgba(255, 255, 255, 0.28);
+		border-radius: 15px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(3.9px);
+		width: 1100px;
+		padding: 20px;
+		color: black;
+
+		.header {
+			text-align: center;
+			margin-bottom: 30px;
+			font-size: 3em;
+			font-family: $heading-font-family;
+			overflow: hidden;
+		}
+
+		.property {
+			justify-content: center;
+			margin-bottom: 3em;
+
+			.image {
+				width: 500px;
+				overflow: hidden;
+				border-radius: 15px;
+				padding: 0;
+				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+				img {
+					width: 100%;
+					height: auto;
+					object-fit: cover;
+					transition: 0.5s ease;
+					border-radius: 15px;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+
+			.details {
+
+				h2 {
+					text-align: center;
+					font-size: 2.3em;
+					margin-bottom: 20px;
+				}
+
+				ul {
+					margin: 0;
+					@include flex (center, center, column, 10px);
+
+					li {
+						list-style-position: inside;
+					}
+				}
+
+				.price {
+					@include flex (space-around, center, row, 0px);
+					margin-top: 10px;
+
+					h2 {
+						margin: 0;
+					}
+
+					button {
+						padding: 10px 15px;
+					}
+				}
+			}
+
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}
